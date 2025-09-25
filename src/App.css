@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
+@font-face{
+  font-family: Cutive_Mono;
+  src: url('./assets/Cutive_Mono\,Poppins\,Source_Code_Pro\,Syncopate/') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.custom-code-input {
+  font-family: 'Cutive Mono', monospace;
+}
+
+.custom-code-input::placeholder {
+  font-family: 'Cutive Mono', monospace;
+  color: #6b7280; /* Cor um pouco mais clara para o placeholder */
+}
+
+.center-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #18181b; /* cor de fundo igual ao da imagem */
+}
+
+.border-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.border-image {
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.logo-inside-border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-img {
+  margin-top: 60%;
+  max-width: 80%;
+  height: auto;
+}
+
+.logo-inside-border {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 250px; /* Adicione esta linha para largura mínima do container */
+}
+
+.custom-code-input {
+  padding: 14px 32px;
+  border-radius: 10px;
+  background: #18181b;
+  color: #fff;
+  font-family: 'Cutive_Mono', monospace;
+  font-size: 1.2rem;
+  border: 2px solid #232326;
+  outline: none;
+  margin-top: 24px;
+  text-align: center;
+  transition:  border 0.2s, box-shadow 0.2s;
+}
+.custom-code-input:focus {
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #fff3;
+}
+
+.submit-button{
+   
+   border: 2px solid #232326;
+   background: #494950;
+   margin-top: 10px;
+   margin-left: 115px;
+   
+}
+
+.icons {
+  position: absolute;
+  top: 50%;               /* centro vertical */
+  left: 50%;              /* centro horizontal */
+  transform: translate(-50%, -50%); /* corrige o deslocamento */
+  display: flex;
+  flex-direction: column; /* ícones em coluna */
+  align-items: center;
+  gap: 24px;              /* espaço entre eles */
+  z-index: 2;             /* na frente da borda */
+}
+
+.icon-img {
+  max-width: 96%;  /* ocupa até 15% da largura da borda */
+  height: auto;
+}
+
+
