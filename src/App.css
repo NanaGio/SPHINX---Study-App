@@ -113,4 +113,23 @@
   height: auto;
 }
 
+.lock{
+  position: absolute;
+  top: 50%;               /* centro vertical */
+  left: 50%;              /* centro horizontal */
+  transform: translate(-50%, -50%); /* corrige o deslocamento */
+  display: flex;
+  flex-direction: column; /* ícones em coluna */
+  align-items: center;
+  gap: 24px;              /* espaço entre eles */
+  z-index: 2;             /* na frente da borda */
+  margin-bottom: 0%;
+  
+}
+
+.lock-img{
+  max-width: 70%;  /* ocupa até 15% da largura da borda */
+  height: auto;
+}
+
 
